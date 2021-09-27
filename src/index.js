@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Routing from './AnimalCardView/Routing';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter } from 'react-router-dom'
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routing />
+  </BrowserRouter>
+
+  ,
   document.getElementById('root')
 );
 
