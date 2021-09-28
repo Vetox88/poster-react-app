@@ -1,6 +1,6 @@
 
 import { Route, Switch } from 'react-router-dom'
-import AnimalCrudMain from '../AnimalList/AnimalCrudMain'
+import AnimalCrudMain from '../PostersList/PostersCrudMain'
 import App from './App'
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Routing from './AnimalCardView/Routing';
+import Routing from './CardView/Routing';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 ReactDOM.render(

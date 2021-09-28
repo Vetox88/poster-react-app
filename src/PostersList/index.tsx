@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import App from './AnimalCrudMain';
+import App from './PostersCrudMain';
 
 ReactDOM.render(
 

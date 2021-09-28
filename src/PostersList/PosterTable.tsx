@@ -2,15 +2,15 @@ import React from 'react'
 import './style.css'
 import { TableContainer } from './TableContainer'
 
-const AnimalTable = (props: any) => (
+const PosterTable = (props: any) => (
     <TableContainer style={{ display: 'flex' }}>
         <table style={{}} >
             <thead >
                 <tr style={{ background: 'black', color: 'white' }}>
                     <th>Name</th>
                     <th>Type</th>
-                    <th>Breed</th>
-                    <th>Age</th>
+                    <th>Artist</th>
+
                     <th>Status</th>
                     <th></th>
                 </tr>
@@ -21,17 +21,11 @@ const AnimalTable = (props: any) => (
                         <tr key={user.id}>
                             <td>{user.name}</td>
                             <td>{user.type}</td>
-                            <td>{user.breed}</td>
-                            <td>{user.age}</td>
+                            <td>{user.artist}</td>
+
                             <td>{user.status}</td>
                             <td>
-                                {user.status === 'booked'
-                                    ? <button style={{ margin: '5px' }} className="button muted-button" >
-                                        Adopt
-                                    </button>
-                                    : <button disabled style={{ margin: '5px' }}>
-                                        Adopt
-                                    </button>}
+
 
                                 <button style={{ margin: '5px' }} onClick={() => props.deleteUser(user.id)}
                                     className="button muted-button" >
@@ -41,13 +35,13 @@ const AnimalTable = (props: any) => (
                         </tr>
                     ))
                 ) : (
-                    <tr>
-                        <td colSpan={3}>No users</td>
-                    </tr>
-                )}
+                        <tr>
+                            <td colSpan={3}>No Art</td>
+                        </tr>
+                    )}
             </tbody>
         </table >
     </TableContainer >
 )
 
-export default AnimalTable
+export default PosterTable
